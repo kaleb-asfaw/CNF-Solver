@@ -18,4 +18,4 @@ In the first example, there are 2 "inner" lists. Each inner list needs at least 
 
 In the second example, the first inner list needs at least 1 statement to be true, so either c is True, p is False, or q is True. The second inner list is a unit clause, menaing b MUST be True for there to exist a valid solution. In the third inner list, either d is True or e is True. 
 
-These are the general rules that my code operates under. Thank you for reading and viewing my code.
+These are the general rules that this program operates under. Thank you for reading and viewing my code.
