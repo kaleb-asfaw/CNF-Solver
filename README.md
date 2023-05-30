@@ -1,1 +1,3 @@
-# SAT
+Conjunctive Normal Form (CNF) logic, is a way that boolean logic is formatted for predicates that require a conjunction of more than 1 clause (with a clause being a "disjunction of literals", an AND of ORs). The solver in this repository is meant to take a long formula that is in CNF form, and outputs a hash table mapping different statements to a True or False value. While the applications of such solvers may seem limited, converting various problems into CNF logic make the applications of this program much more broad. In the case of this project, I wrote code to convert the starting state of Sudoku into CNF logic, an example of how converting different situations into CNF logic will enable my code to solve unassuming problems. Here is a brief overview of CNF logic:
+
+    
