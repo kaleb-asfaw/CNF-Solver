@@ -5,4 +5,11 @@ Conjunctive Normal Form (CNF) logic, is a way that boolean logic is formatted fo
                                                     
                                           p and q -->   [ [(p, True)], [(q, True)] ]
     
-To generalize, predicates within the same list represent "OR" statements. In the first example, p-True and q-True tuples being within the same list means that to satisfy that clause, either of them can be true (both being true is NOT required). This contrasts from the second example, where each list has only one predicate. Another way to think about it: the CNF logic is formed as a 2d array, and within every "inner" list, at least ONE of the predicates must be satisfied.
+To generalize, predicates within the same list represent "OR" statements. In the first example, p-True and q-True tuples being within the same list means that to satisfy that clause, either of them can be true (both being true is NOT required). This contrasts from the second example, where each list has only one predicate. Another way to think about it: the CNF logic is formed as a 2d array, and within every "inner" list, at least ONE of the predicates must be satisfied. For example:
+
+                                          CNF                         CNF in Python
+                                     c and (p or q) -->    [ [(c, True)], [(p, True), (q, True)] ]
+          
+               (c or not p or q) and b and (d or e) -->    [ [(c, True), (p, False), (q, True)], [(b, True)], [(d, True), (e, True)] ] 
+
+In the first example, there are 2 "inner" lists. Each inner list needs at least one of the statements to be true. Since the first "inner" list only has one statement (this is known as a unit clause)
