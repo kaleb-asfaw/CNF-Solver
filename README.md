@@ -12,4 +12,6 @@ To generalize, predicates within the same list represent "OR" statements. In the
           
                (c or not p or q) and b and (d or e) -->    [ [(c, True), (p, False), (q, True)], [(b, True)], [(d, True), (e, True)] ] 
 
-In the first example, there are 2 "inner" lists. Each inner list needs at least one of the statements to be true. Since the first "inner" list only has one statement (this is known as a unit clause)
+In the first example, there are 2 "inner" lists. Each inner list needs at least one of the statements to be true. Since the first "inner" list only has one statement (this is known as a unit clause), it must be true, or else there is no solution to the CNF formula. In the second inner list, either p or q must evaluate to true in order for there to be valid solutions. 
+
+In the second example, the first inner list needs at least 1 statement to be true, so either c is True, p is False, or q is True. The second inner list is a unit clause, menaing b MUST be True for there to exist a valid solution. In the third inner list, either d is True or e is True.
